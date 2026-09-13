@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>🎬 Video Squisher by KitKarl — Shrink your videos. Keep the quality.</title>
+<meta name="description" content="Video Squisher finds the strongest compression that still looks the way you asked — and proves it against your original before keeping it. Windows, macOS, Linux. Private, offline, one-time price.">
+<link rel="icon" type="image/png" href="assets/icon.png">
+<style>
+  :root {
+    --bg: #FAF5EF; --card: #FFFFFF; --text: #3D3733;
+    --accent: #2A9D8F; --accent-hi: #21867A; --tint: #E4F2F0;
+    --muted: #7A716A;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #23201D; --card: #2C2825; --text: #EDE7E0;
+      --accent: #3AB8A8; --accent-hi: #2A9D8F; --tint: #31423F;
+      --muted: #A79E96;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+  }
+  .wrap { max-width: 920px; margin: 0 auto; padding: 0 20px; }
+  header { text-align: center; padding: 56px 20px 32px; }
+  header img.logo { width: 96px; height: 96px; border-radius: 20px; }
+  h1 { font-size: 1.05rem; font-weight: 400; color: var(--muted); margin: 14px 0 6px; letter-spacing: .5px; }
+  h2.hero { font-size: 2.4rem; line-height: 1.2; margin: 0 0 14px; }
+  p.sub { font-size: 1.15rem; color: var(--muted); max-width: 640px; margin: 0 auto 28px; }
+  .cta-row { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+  .btn {
+    display: inline-block; padding: 14px 26px; border-radius: 12px;
+    font-weight: 600; text-decoration: none; font-size: 1.05rem;
+  }
+  .btn-primary { background: var(--accent); color: #fff; }
+  .btn-primary:hover { background: var(--accent-hi); }
+  .btn-ghost { border: 2px solid var(--accent); color: var(--accent); }
+  .btn-ghost:hover { background: var(--tint); }
+  .fineprint { font-size: .9rem; color: var(--muted); margin-top: 14px; }
+  section { padding: 40px 0; }
+  h3.sec { font-size: 1.5rem; margin: 0 0 22px; text-align: center; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; }
+  .card { background: var(--card); border-radius: 14px; padding: 22px; }
+  .card h4 { margin: 0 0 8px; font-size: 1.05rem; color: var(--accent); }
+  .card p { margin: 0; font-size: .95rem; color: var(--muted); }
+  .shot { width: 100%; border-radius: 12px; display: block; }
+  .shots { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 18px; }
+  table.compare { width: 100%; border-collapse: collapse; background: var(--card); border-radius: 14px; overflow: hidden; }
+  table.compare th, table.compare td { padding: 12px 16px; text-align: left; border-bottom: 1px solid var(--tint); }
+  table.compare th { background: var(--tint); }
+  table.compare tr:last-child td { border-bottom: none; }
+  details { background: var(--card); border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; }
+  summary { font-weight: 600; cursor: pointer; }
+  details p { color: var(--muted); margin: 10px 0 0; }
+  footer { text-align: center; padding: 40px 20px 56px; color: var(--muted); font-size: .9rem; }
+  footer a { color: var(--accent); }
+  .pill { display: inline-block; background: var(--tint); color: var(--accent); border-radius: 999px; padding: 2px 12px; font-size: .85rem; font-weight: 600; }
+  ul.trust { list-style: none; padding: 0; margin: 0; }
+  ul.trust li { padding: 6px 0; }
+  ul.trust li::before { content: "✓ "; color: var(--accent); font-weight: 700; }
+</style>
+</head>
+<body>
+
+<header>
+  <img class="logo" src="assets/icon.png" alt="Video Squisher logo">
+  <h1>🎬 VIDEO SQUISHER BY KITKARL</h1>
+  <h2 class="hero">Shrink your videos.<br>Keep the quality.</h2>
+  <p class="sub">Video Squisher finds the strongest compression that still looks the
+  way you asked — and proves it against your original before keeping it.</p>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="https://download.kitkarl.com">Download free</a>
+    <a class="btn btn-ghost" href="https://kitkarl.lemonsqueezy.com/checkout/buy/99a17a98-c707-4a5f-9811-222b1df0206b">Buy Pro — $29.99 once</a>
+  </div>
+  <p class="fineprint">Free: 5 videos a day, forever, no account. Windows · macOS · Linux.</p>
+</header>
+
+<div class="wrap">
+
+<section>
+  <h3 class="sec">You pick <em>quality</em>, not codec settings</h3>
+  <div class="grid">
+    <div class="card"><h4>Tell it how the video should look</h4>
+      <p>Smallest, Reduced, Good enough, Unnoticeable, Original — a plain-English
+      scale, not CRF numbers or presets.</p></div>
+    <div class="card"><h4>It checks its own work</h4>
+      <p>Every level is test-encoded and scored against your original with the
+      same perceptual metrics streaming companies use (VMAF / SSIM / XPSNR).</p></div>
+    <div class="card"><h4>Smallest file that passes your bar</h4>
+      <p>It searches for the strongest compression that still meets your
+      quality — per video, automatically.</p></div>
+    <div class="card"><h4>Never bigger</h4>
+      <p>If the result isn't actually smaller, it's thrown away. If it can't
+      save at least 5%, it tells you instead of wasting a re-encode.</p></div>
+    <div class="card"><h4>Need it under 25&nbsp;MB?</h4>
+      <p>Target-size mode: type the size, it finds the best quality that fits.</p></div>
+    <div class="card"><h4>Modern codecs, fast</h4>
+      <p>AV1 or HEVC with NVIDIA, Intel, AMD, and Apple hardware encoding
+      when available. FFmpeg ships inside — nothing else to install.</p></div>
+  </div>
+</section>
+
+<section>
+  <h3 class="sec">The app</h3>
+  <div class="shots">
+    <div><img class="shot" src="screenshots/1-main-window.jpg" alt="Main window — drop videos, pick a quality word"></div>
+    <div><img class="shot" src="screenshots/2-main-window-target-size.jpg" alt="Target-size mode"></div>
+    <div><img class="shot" src="screenshots/3-main-window-advanced.jpg" alt="Advanced mode"></div>
+    <div><img class="shot" src="screenshots/4-settings.jpg" alt="Settings"></div>
+  </div>
+</section>
+
+<section>
+  <h3 class="sec">What's preserved</h3>
+  <div class="card">
+    <ul class="trust">
+      <li>Full resolution at the top quality levels — guaranteed by design</li>
+      <li>Subtitles, chapters, metadata, frame rate, aspect (portrait phone video handled correctly)</li>
+      <li>Audio ≤128&nbsp;kbps passes through untouched; higher becomes clean 128&nbsp;kbps AAC</li>
+      <li>10-bit color for 10-bit sources at high quality (HDR passes through)</li>
+      <li>Watch folders &amp; batch mode (Pro): drop files in, get squished copies out</li>
+      <li>History with per-file savings and a lifetime space-saved counter</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h3 class="sec">Private by design</h3>
+  <div class="card">
+    <p style="margin:0;color:var(--muted)">Your videos never leave your computer. No uploads, no
+    accounts, no cloud, no telemetry. The only network calls the app ever
+    makes are an optional license check and an update check — and it works
+    fully offline after one-time activation.</p>
+  </div>
+</section>
+
+<section>
+  <h3 class="sec">Free vs Pro</h3>
+  <table class="compare">
+    <tr><th></th><th>Free</th><th><span class="pill">Pro — $29.99 once</span></th></tr>
+    <tr><td>Videos per day</td><td>5</td><td>Unlimited</td></tr>
+    <tr><td>At once</td><td>One at a time</td><td>Whole queue, auto-advance</td></tr>
+    <tr><td>Watch folders</td><td>—</td><td>✓</td></tr>
+    <tr><td>Everything else (quality engine, formats, updater)</td><td>✓</td><td>✓</td></tr>
+  </table>
+  <p class="fineprint" style="text-align:center">One purchase · up to 3 machines · manage them yourself
+  in the app · perpetual, no subscription.</p>
+</section>
+
+<section>
+  <h3 class="sec">Questions</h3>
+  <details><summary>Will it make my videos look worse?</summary>
+    <p>You pick how they should look; at the default level the difference is
+    engineered to be imperceptible, and the app scores its output against the
+    original to hold that promise.</p></details>
+  <details><summary>Does it upload my videos?</summary>
+    <p>No. Everything happens on your machine.</p></details>
+  <details><summary>What if it can't make a file smaller?</summary>
+    <p>It tells you and skips — you never end up with a bigger file.</p></details>
+  <details><summary>Which platforms?</summary>
+    <p>Windows 10/11 (64-bit), macOS 13+ on Apple Silicon (signed and
+    notarized), and Linux (AppImage, .deb; Flathub listing in submission).</p></details>
+  <details><summary>Why AV1?</summary>
+    <p>Same look, roughly half the size of H.264. A one-switch
+    "More compatible" (HEVC) mode exists for older devices.</p></details>
+  <details><summary>Refunds and lost keys?</summary>
+    <p>Both handled via Lemon Squeezy — recover a key with your purchase
+    email; refunds deactivate the license automatically.</p></details>
+</section>
+
+<section style="text-align:center">
+  <a class="btn btn-primary" href="https://download.kitkarl.com">Download free</a>
+</section>
+
+</div>
+
+<footer>
+  🎬 Video Squisher by KitKarl · <a href="https://www.kitkarl.com/squisher">kitkarl.com/squisher</a><br>
+  This page is the product's public site; the app itself is distributed as a
+  binary. Bundled FFmpeg is used under the GPL; its license and attribution
+  ship inside every installer.
+</footer>
+
+</body>
+</html>
