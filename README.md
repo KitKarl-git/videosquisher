@@ -34,3 +34,16 @@ serves it at `https://<you>.github.io/videosquisher/`.
 
 The app bundles GPL-licensed FFmpeg; attribution ships inside every
 installer. This page only links to the app and contains no GPL code.
+
+## SEO decisions (do not casually undo)
+
+- `index.html` carries `<link rel="canonical" href="https://www.kitkarl.com/squisher">`
+  — deliberate: the GitHub page defers search-ranking credit to the official
+  marketing page so the two don't compete. Remove only if this page becomes
+  the primary site.
+- `robots.txt` + `sitemap.xml` (single URL) live at the repo root; both use
+  the absolute URL `https://kitkarl-git.github.io/videosquisher/` — update
+  them if the site ever moves to a custom domain.
+- Open Graph / Twitter tags make shares in Discord/Slack/WhatsApp/iMessage
+  render a screenshot card; `og:image` is `screenshots/1-main-window.jpg`.
+
