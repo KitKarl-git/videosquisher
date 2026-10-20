@@ -75,6 +75,3 @@ credited inside every installer, as they should be.
 - [EdgePOP](https://github.com/KitKarl-git/EdgePop) - hover the seam
   between two monitors and see the other screen's windows
 - everything else: [kitkarl.com](https://kitkarl.com)
-
-If Video Squisher freed up some disk space for you, [a coffee is always
-appreeciated](https://kitkarl.com/donate/).
