@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-site-verification" content="jme-qeJ4K3VsNk1a_qXMFzcZN0zCwnI8Mvg8NYtm0o8">
+<title>Video Squisher by KitKarl - shrink your videos, keep the quality</title>
+<meta name="description" content="Free desktop app that makes video files smaller without making them look worse. You pick the quality, it finds the smallest file that passes. Windows, macOS, Linux.">
+<link rel="icon" type="image/png" href="assets/icon.png">
+<link rel="canonical" href="https://www.kitkarl.com/squisher">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Video Squisher by KitKarl">
+<meta property="og:title" content="Video Squisher by KitKarl">
+<meta property="og:description" content="Make video files smaller without them looking worse. Free on Windows, macOS and Linux. One-time price, no subscription.">
+<meta property="og:url" content="https://kitkarl-git.github.io/videosquisher/">
+<meta property="og:image" content="https://kitkarl-git.github.io/videosquisher/screenshots/1-main-window.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root {
+    --bg: #FAF5EF; --card: #FFFFFF; --text: #3D3733;
+    --accent: #2A9D8F; --accent-hi: #21867A; --tint: #E4F2F0;
+    --muted: #7A716A;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #23201D; --card: #2C2825; --text: #EDE7E0;
+      --accent: #3AB8A8; --accent-hi: #2A9D8F; --tint: #31423F;
+      --muted: #A79E96;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+  }
+  .wrap { max-width: 920px; margin: 0 auto; padding: 0 20px; }
+  header { text-align: center; padding: 56px 20px 32px; }
+  header img.logo { width: 96px; height: 96px; border-radius: 20px; }
+  h1 { font-size: 1.05rem; font-weight: 400; color: var(--muted); margin: 14px 0 6px; letter-spacing: .5px; }
+  h2.hero { font-size: 2.4rem; line-height: 1.2; margin: 0 0 14px; }
+  p.sub { font-size: 1.15rem; color: var(--muted); max-width: 640px; margin: 0 auto 28px; }
+  .cta-row { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+  .btn {
+    display: inline-block; padding: 14px 26px; border-radius: 12px;
+    font-weight: 600; text-decoration: none; font-size: 1.05rem;
+  }
+  .btn-primary { background: var(--accent); color: #fff; }
+  .btn-primary:hover { background: var(--accent-hi); }
+  .btn-ghost { border: 2px solid var(--accent); color: var(--accent); }
+  .btn-ghost:hover { background: var(--tint); }
+  .fineprint { font-size: .9rem; color: var(--muted); margin-top: 14px; }
+  section { padding: 40px 0; }
+  h3.sec { font-size: 1.5rem; margin: 0 0 22px; text-align: center; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; }
+  .card { background: var(--card); border-radius: 14px; padding: 22px; }
+  .card h4 { margin: 0 0 8px; font-size: 1.05rem; color: var(--accent); }
+  .card p { margin: 0; font-size: .95rem; color: var(--muted); }
+  .shot { width: 100%; border-radius: 12px; display: block; }
+  .shots { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 18px; }
+  table.compare { width: 100%; border-collapse: collapse; background: var(--card); border-radius: 14px; overflow: hidden; }
+  table.compare th, table.compare td { padding: 12px 16px; text-align: left; border-bottom: 1px solid var(--tint); }
+  table.compare th { background: var(--tint); }
+  table.compare tr:last-child td { border-bottom: none; }
+  details { background: var(--card); border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; }
+  summary { font-weight: 600; cursor: pointer; }
+  details p { color: var(--muted); margin: 10px 0 0; }
+  footer { text-align: center; padding: 40px 20px 56px; color: var(--muted); font-size: .9rem; }
+  footer a { color: var(--accent); }
+  .pill { display: inline-block; background: var(--tint); color: var(--accent); border-radius: 999px; padding: 2px 12px; font-size: .85rem; font-weight: 600; }
+  ul.trust { list-style: none; padding: 0; margin: 0; }
+  ul.trust li { padding: 6px 0; }
+  ul.trust li::before { content: "✓ "; color: var(--accent); font-weight: 700; }
+</style>
+</head>
+<body>
+
+<header>
+  <img class="logo" src="assets/icon.png" alt="Video Squisher logo">
+  <h1>🎬 VIDEO SQUISHER BY KITKARL</h1>
+  <h2 class="hero">Shrink your videos.<br>Keep the quality.</h2>
+  <p class="sub">Most compressors want you to know what a CRF is. This one just
+  asks how you want the video to look, then finds the smallest file that
+  still looks that way.</p>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="https://download.kitkarl.com">Download free</a>
+    <a class="btn btn-ghost" href="https://kitkarl.lemonsqueezy.com/checkout/buy/99a17a98-c707-4a5f-9811-222b1df0206b">Buy Pro - $29.99 once</a>
+  </div>
+  <p class="fineprint">Free does 5 videos a day, forever, no account. Windows · macOS · Linux.</p>
+</header>
+
+<div class="wrap">
+
+<section>
+  <h3 class="sec">You pick the quality, it does the rest</h3>
+  <div class="grid">
+    <div class="card"><h4>A word, not a number</h4>
+      <p>Smallest, Reduced, Good enough, Unnoticeable, Original. If you
+      don't know what CRF means, good. You don't need to.</p></div>
+    <div class="card"><h4>It grades its own homework</h4>
+      <p>Each quality level is test encoded and scored against your
+      original with perceptual metrics, the same kind streaming companies
+      use to check their streams.</p></div>
+    <div class="card"><h4>The smallest file that passes</h4>
+      <p>It works per video: compress as hard as possible while still
+      meeting the quality you asked for.</p></div>
+    <div class="card"><h4>Never hands you a bigger file</h4>
+      <p>If the result isn't smaller, it's thrown away. If there's no
+      real saving to be had (under 5%), it tells you instead of wasting
+      a re-encode.</p></div>
+    <div class="card"><h4>Need it under 25&nbsp;MB?</h4>
+      <p>Type the size you need and it finds the best quality that fits.
+      Handy for email attachments and upload limits.</p></div>
+    <div class="card"><h4>New codecs, and it's fast</h4>
+      <p>AV1 by default, HEVC with one switch for older devices. Uses
+      NVIDIA, Intel, AMD or Apple hardware encoding when it's there.
+      FFmpeg comes inside, nothing else to install.</p></div>
+  </div>
+</section>
+
+<section>
+  <h3 class="sec">The app</h3>
+  <div class="shots">
+    <div><img class="shot" src="screenshots/1-main-window.jpg" alt="Main window: drop videos in, pick a quality word"></div>
+    <div><img class="shot" src="screenshots/2-main-window-target-size.jpg" alt="Target size mode"></div>
+    <div><img class="shot" src="screenshots/3-main-window-advanced.jpg" alt="Advanced mode"></div>
+    <div><img class="shot" src="screenshots/4-settings.jpg" alt="Settings"></div>
+  </div>
+</section>
+
+<section>
+  <h3 class="sec">What survives the squish</h3>
+  <div class="card">
+    <ul class="trust">
+      <li>Full resolution at the top quality levels</li>
+      <li>Subtitles, chapters, metadata, frame rate, portrait phone video</li>
+      <li>Audio at 128&nbsp;kbps or less passes through untouched; anything higher becomes clean 128&nbsp;kbps AAC</li>
+      <li>10-bit color stays 10-bit at high quality, so HDR comes through</li>
+      <li>Watch folders and full queue mode on Pro</li>
+      <li>A history page with per-file savings and a running total of the space you've freed</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h3 class="sec">Your videos stay yours</h3>
+  <div class="card">
+    <p style="margin:0;color:var(--muted)">Nothing gets uploaded. No accounts, no
+    cloud, no telemetry. The only network calls the app ever makes are an
+    optional license check and an update check, and after one-time
+    activation it works fully offline.</p>
+  </div>
+</section>
+
+<section>
+  <h3 class="sec">Free vs Pro</h3>
+  <table class="compare">
+    <tr><th></th><th>Free</th><th><span class="pill">Pro - $29.99 once</span></th></tr>
+    <tr><td>Videos per day</td><td>5</td><td>Unlimited</td></tr>
+    <tr><td>At once</td><td>One at a time</td><td>Whole queue, auto-advance</td></tr>
+    <tr><td>Watch folders</td><td></td><td>✓</td></tr>
+    <tr><td>Everything else (quality engine, formats, updater)</td><td>✓</td><td>✓</td></tr>
+  </table>
+  <p class="fineprint" style="text-align:center">One purchase, up to 3 machines, yours
+  forever. No subscription.</p>
+</section>
+
+<section>
+  <h3 class="sec">Questions</h3>
+  <details><summary>Will my videos look worse?</summary>
+    <p>You decide how they should look. At the default level the app
+    scores its own output against the original to hold that line, and it
+    won't keep a file that doesn't pass.</p></details>
+  <details><summary>Does it upload my videos anywhere?</summary>
+    <p>No. Everything happens on your machine.</p></details>
+  <details><summary>What if a file can't get smaller?</summary>
+    <p>It tells you and moves on. You never end up with a file bigger
+    than the one you started with.</p></details>
+  <details><summary>Which platforms?</summary>
+    <p>Windows 10/11 (64-bit), macOS 13+ on Apple Silicon (signed and
+    notarized), and Linux (AppImage or .deb).</p></details>
+  <details><summary>Why AV1?</summary>
+    <p>Same look, roughly half the size of H.264. If older devices need
+    to play the file, flip the "more compatible" switch and it uses HEVC
+    instead.</p></details>
+  <details><summary>Lost your key, or want a refund?</summary>
+    <p>Both go through Lemon Squeezy. Your purchase email recovers your
+    key; a refund deactivates the license automatically.</p></details>
+</section>
+
+<section style="text-align:center">
+  <a class="btn btn-primary" href="https://download.kitkarl.com">Download free</a>
+</section>
+
+</div>
+
+<footer>
+  🎬 Video Squisher by KitKarl · <a href="https://www.kitkarl.com/squisher">kitkarl.com/squisher</a><br>
+  This is the product's download page; the app itself ships as a binary.
+  The bundled FFmpeg is GPL; its license and attribution are inside every
+  installer.
+</footer>
+
+</body>
+</html>
